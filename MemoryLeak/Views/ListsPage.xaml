@@ -17,10 +17,10 @@
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:StringList">
-                        <ListView ItemsSource="{x:Bind}"
-                                  ItemClick="ListView_OnItemClick"
-                                  IsItemClickEnabled="True"/>
-                    </DataTemplate>
+                    <ListView ItemsSource="{x:Bind}"
+                              ItemClick="ListView_OnItemClick"
+                              IsItemClickEnabled="True"/>
+                </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </Grid>

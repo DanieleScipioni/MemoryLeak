@@ -36,7 +36,7 @@ namespace MemoryLeak
 
         public static void NavigateTo(Type type)
         {
-            var app = ((App) Current);
+            var app = (App) Current;
             app._pageStack.Push(type);
             app.ChangeWindowContent(type);
         }
