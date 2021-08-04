@@ -48,6 +48,8 @@ namespace MemoryLeak
             _pageStack.Pop();
             Type type = _pageStack.Peek();
             ChangeWindowContent(type);
+            GC.Collect();
+            GC.Collect();
         }
 
         private void ChangeWindowContent(Type type)
